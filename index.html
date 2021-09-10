@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>教师节快乐</title>
+<meta charset="utf-8">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<style>
+          *{margin: 0px;padding: 0px;}
+html{
+    background-color:rgb(186, 178, 240);
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    background-color:rgb(238, 160, 205) ;
+}
+.a{
+    width: 80%;
+    height: 90%;
+    margin-top: 2%;
+    background-color:rgb(15, 15, 12);
+   font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",Tahoma, Geneva ,monospace ;
+    color: white;
+    font-size: 25px;
+}
+.a1{
+    margin-top: 3%;
+    margin-left: 3%;
+    color: rgb(146, 233, 233);
+}
+.b{
+     
+     margin-left: 3%;
+}
+.mm{
+   border-top:0;border-left:0;border-right:0; background-color: black;width: 50px;   caret-color: red;
+        outline: none;
+   color: rgb(146, 233, 233);
+   font-size: 25px;
+   font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",Tahoma, Geneva ,monospace ;
+}
+.c{
+    margin-top: 15%;
+    margin-left: 15%;
+    color:rgb(146, 233, 233) ;
+}
+</style>
+<body>
+    <div class="col-xs-6 col-sm-6 col-md-4 a">
+        <div class="question">
+            <div class="a1">请写出正确的答案：</div><br>
+       <span class="b">You&nbsp;&nbsp;</span><span class="b1"><input class="mm" type="text"  />&nbsp;&nbsp;a  good  teacher</span>
+    </div>
+    
+       <div class="c">
+        <span class="text">
+           教师节快乐，想了想。<br>
+           用自己所学的专业祝你节日快乐岂不是很酷<br>
+           老师祝你的事业一帆风顺<br>
+           也祝你越活越年轻<br><br>
+           您的学生：王亮
+        </span>
+    </div>
+</div>
+     
+    <script>
+        $('.c').hide()
+        // start()
+        $(".mm").on("input",function(){
+            console.log($("#ipt").val())
+            if($(".mm").val() =='are'){
+                setTimeout(function(){
+                    $(".question").fadeOut(300)
+                    start()
+                },500)
+            }
+        })
+        function start(){
+            $('.c').fadeIn(500)
+            $('.c').animate({top:'20%'})
+        }
+    </script>
+</body>
+</html>
